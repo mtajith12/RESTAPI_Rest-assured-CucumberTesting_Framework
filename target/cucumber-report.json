@@ -1,0 +1,730 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 433048851,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "GET the customer information by Customer Id",
+        "description": "",
+        "id": "testing-flot/ivr-rest-api\u0027s;get-the-customer-information-by-customer-id",
+        "after": [
+          {
+            "result": {
+              "duration": 308671,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 373626895,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Build the rest request with content-type and basic auth details",
+            "match": {
+              "location": "FLOT_Stepdefs.buildTheRestRequestWithContentTypeAndBasicAuthDetails()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2329794760,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Initiate Rest service to get customer details with Customer Id as \"3000083750\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000083750",
+                  "offset": 67
+                }
+              ],
+              "location": "FLOT_Stepdefs.Initiate_Rest_service_to_get_customer_details_with_Customer_Id_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4723208,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "REST Response HTTP status code should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "FLOT_Stepdefs.restResponseHTTPStatusCodeShouldBe(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1812876,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response should includes the following customer details",
+            "match": {
+              "location": "FLOT_Stepdefs.responseShouldIncludesTheFollowingCustomerDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "contactPartnerNumber",
+                  "buAgreementId",
+                  "businessPartnerNumber",
+                  "nextBillingWindowDate"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "wewe",
+                  "3000083750",
+                  "850040644543",
+                  "1027558179",
+                  "2018-03-29"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1550201,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "GET the customer information by phoneNo",
+        "description": "",
+        "id": "testing-flot/ivr-rest-api\u0027s;get-the-customer-information-by-phoneno",
+        "after": [
+          {
+            "result": {
+              "duration": 91613,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1574910,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Build the rest request with content-type and basic auth details",
+            "match": {
+              "location": "FLOT_Stepdefs.buildTheRestRequestWithContentTypeAndBasicAuthDetails()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 933698316,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Initiate Rest service to get customer details with phone No as \"00447778889994\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "00447778889994",
+                  "offset": 64
+                }
+              ],
+              "location": "FLOT_Stepdefs.initiateRestServiceToGetCustomerDetailsWithPhoneNoAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106439,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "REST Response HTTP status code should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "FLOT_Stepdefs.restResponseHTTPStatusCodeShouldBe(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 140271,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "response should includes the following customer details",
+            "match": {
+              "location": "FLOT_Stepdefs.responseShouldIncludesTheFollowingCustomerDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "contactPartnerNumber",
+                  "buAgreementId",
+                  "businessPartnerNumber",
+                  "nextBillingWindowDate"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "wewe",
+                  "3000083750",
+                  "850040644543",
+                  "1027558179",
+                  "2018-03-29"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 384699,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "GET the customer information by Account No",
+        "description": "",
+        "id": "testing-flot/ivr-rest-api\u0027s;get-the-customer-information-by-account-no",
+        "after": [
+          {
+            "result": {
+              "duration": 61582,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 640152,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Build the rest request with content-type and basic auth details",
+            "match": {
+              "location": "FLOT_Stepdefs.buildTheRestRequestWithContentTypeAndBasicAuthDetails()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 950538028,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Initiate Rest service to get customer details with Account No as \"850040644543\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "850040644543",
+                  "offset": 66
+                }
+              ],
+              "location": "FLOT_Stepdefs.initiateRestServiceToGetCustomerDetailsWithAccountNoAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60822,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "REST Response HTTP status code should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "FLOT_Stepdefs.restResponseHTTPStatusCodeShouldBe(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 124305,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "response should includes the following customer details",
+            "match": {
+              "location": "FLOT_Stepdefs.responseShouldIncludesTheFollowingCustomerDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "contactPartnerNumber",
+                  "buAgreementId",
+                  "businessPartnerNumber",
+                  "nextBillingWindowDate"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "wewe",
+                  "3000083750",
+                  "850040644543",
+                  "1027558179",
+                  "2018-03-29"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Testing FLOT/IVR REST API\u0027s",
+    "description": "",
+    "id": "testing-flot/ivr-rest-api\u0027s",
+    "keyword": "Feature",
+    "uri": "Flot_Endpoints.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 852648,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Testing POSTCode lookup endpoint",
+        "description": "",
+        "id": "testing-the-rest-endpoints-for-fde;testing-postcode-lookup-endpoint",
+        "after": [
+          {
+            "result": {
+              "duration": 70705,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2404647257,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Engineer login to CI app",
+            "match": {
+              "location": "FDE_Stepdefs.engineerLoginToCIApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3910151458,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "he enters post code of customer \"DM001PL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DM001PL",
+                  "offset": 33
+                }
+              ],
+              "location": "FDE_Stepdefs.heEntersPostCodeOfCustomer(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 747730,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "response should have status \u0027200\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "FDE_Stepdefs.responseShouldHaveStatus(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 107199,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "CI app should display all the address",
+            "match": {
+              "location": "FDE_Stepdefs.ciAppShouldDisplayAllTheAddress()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 930196,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Test to get addressId by Invalid POSTCode",
+        "description": "",
+        "id": "testing-the-rest-endpoints-for-fde;test-to-get-addressid-by-invalid-postcode;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 54740,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 933800573,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Engineer login to CI app",
+            "match": {
+              "location": "FDE_Stepdefs.engineerLoginToCIApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 820075214,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "he enters invalid post code of customer \"DM002PL00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DM002PL00",
+                  "offset": 41
+                }
+              ],
+              "location": "FDE_Stepdefs.heEntersInvalidPostCodeOfCustomer(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84771,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "response should have HTTP status 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 33
+                }
+              ],
+              "location": "FDE_Stepdefs.responseShouldHaveHTTPStatus(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 682347,
+              "error_message": "java.lang.AssertionError: Error message Check Failed!\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat com.centrica.assetTracking.tests.stepDefinitions.FDE_Stepdefs.response_should_have_following_error_message_Invalid_UK_postcode_postcode_must_be_in_the_given_format_TW_NJ_including_a_space(FDE_Stepdefs.java:92)\r\n\tat ✽.And response should have following error message Invalid UK postcode, postcode must be in the given format TW20 8NJ, including a space(testFDE_endpoints.feature:13)\r\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "response should have following error message Invalid UK postcode, postcode must be in the given format TW20 8NJ, including a space",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 105
+                },
+                {
+                  "val": "8",
+                  "offset": 108
+                }
+              ],
+              "location": "FDE_Stepdefs.response_should_have_following_error_message_Invalid_UK_postcode_postcode_must_be_in_the_given_format_TW_NJ_including_a_space(int,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 373295,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Test to get address info by id",
+        "description": "",
+        "id": "testing-the-rest-endpoints-for-fde;test-to-get-address-info-by-id",
+        "after": [
+          {
+            "result": {
+              "duration": 88952,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6160128,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Engineer have address id for the mention postcode",
+            "match": {
+              "location": "FDE_Stepdefs.engineerHaveAddressIdForTheMentionPostcode()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 960230774,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "he enters address id to findAddressById endpoint \"address_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "address_id",
+                  "offset": 50
+                }
+              ],
+              "location": "FDE_Stepdefs.heEntersAddressIdToFindAddressByIdEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98456,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "response should have status \u0027200\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "FDE_Stepdefs.responseShouldHaveStatus(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84010,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "response should have following details \u0027\u003cstreet\u003e\u0027,\u0027\u003ctown\u003e\u0027,\u0027\u003cid\u003e\u0027,\u0027\u003cfirstLine\u003e\u0027",
+            "match": {
+              "location": "FDE_Stepdefs.responseShouldHaveFollowingDetailsStreetTownIdFirstLine()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 578949,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Test to get address info by passing invalid id",
+        "description": "",
+        "id": "testing-the-rest-endpoints-for-fde;test-to-get-address-info-by-passing-invalid-id",
+        "after": [
+          {
+            "result": {
+              "duration": 76787,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "Engineer passing invalid address id for the mention postcode",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "he enters address id to findAddressById endpoint \"address_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "address_id",
+                  "offset": 50
+                }
+              ],
+              "location": "FDE_Stepdefs.heEntersAddressIdToFindAddressByIdEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "response should have HTTP status \u003cnumber\u003e\u0027",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "response should have following error message \u003cerror_message\u003e",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Testing the REST endpoints for FDE",
+    "description": "",
+    "id": "testing-the-rest-endpoints-for-fde",
+    "keyword": "Feature",
+    "uri": "testFDE_endpoints.feature"
+  }
+]

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="API TEST SUITE">
+
+    <!--UPDATE THESE TWO PARAMETERS-->
+    <parameter name="serviceEndPoint" value=""/>
+    <parameter name="auth" value=""/>
+
+
+    <test name=" API TESTS ">
+        <parameter name="customerServiceRequestEndPoint" value="/api/customer"/>
+        <classes>
+            <class name="com.centrica.assetTracking.tests.stepDefinitions.Flot_Endpoints_steps"/>
+        </classes>
+    </test>
+
+</suite>

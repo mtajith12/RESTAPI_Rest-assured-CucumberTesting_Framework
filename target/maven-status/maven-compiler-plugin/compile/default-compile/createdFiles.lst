@@ -1,0 +1,4 @@
+com\centrica\assetTracking\cucumber\TestContext.class
+com\centrica\assetTracking\enums\Context.class
+com\centrica\assetTracking\config\Endpoint.class
+com\centrica\assetTracking\cucumber\ScenarioContext.class

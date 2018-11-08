@@ -1,0 +1,6 @@
+com\centrica\assetTracking\tests\stepDefinitions\Hooks.class
+com\centrica\assetTracking\tests\runner\TestRunner.class
+com\centrica\assetTracking\tests\stepDefinitions\FDE_Stepdefs.class
+com\centrica\assetTracking\tests\utilities\BaseClass.class
+com\centrica\assetTracking\tests\stepDefinitions\FLOT_Stepdefs.class
+com\centrica\assetTracking\tests\utilities\PropertiesLoader.class

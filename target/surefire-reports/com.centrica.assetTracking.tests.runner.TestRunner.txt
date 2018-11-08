@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.centrica.assetTracking.tests.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 15.961 sec <<< FAILURE!
+And response should have following error message Invalid UK postcode, postcode must be in the given format TW20 8NJ, including a space(| 404 | Invalid UK postcode, postcode must be in the given format TW20 8NJ, including a space |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Error message Check Failed!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.centrica.assetTracking.tests.stepDefinitions.FDE_Stepdefs.response_should_have_following_error_message_Invalid_UK_postcode_postcode_must_be_in_the_given_format_TW_NJ_including_a_space(FDE_Stepdefs.java:92)
+	at ?.And response should have following error message Invalid UK postcode, postcode must be in the given format TW20 8NJ, including a space(testFDE_endpoints.feature:13)
+
+| 404 | Invalid UK postcode, postcode must be in the given format TW20 8NJ, including a space |  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Error message Check Failed!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.centrica.assetTracking.tests.stepDefinitions.FDE_Stepdefs.response_should_have_following_error_message_Invalid_UK_postcode_postcode_must_be_in_the_given_format_TW_NJ_including_a_space(FDE_Stepdefs.java:92)
+	at ?.And response should have following error message Invalid UK postcode, postcode must be in the given format TW20 8NJ, including a space(testFDE_endpoints.feature:13)
+
